@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TODO App | 1er cambio </title>
+    <title>TODO App | 1er cambio</title>
     <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="container center">
+    <header>
+      <img src="./img/checked.gif" alt="" class="haderImg" />
       <h1 class="center title">TODO App</h1>
+    </header>
+    <div class="container center">
       <div class="flow-right controls">
         <span>Item count: <span id="item-count">0</span></span>
         <span>Unchecked count: <span id="unchecked-count">0</span></span>
       </div>
       <button class="button center" onClick="addTodo()">Agregar Tarea</button>
-      <ul id="todo-list" class="todo-list"></ul>
+      <div class="tareasContainer">
+        <ul id="todo-list" class="todo-list"></ul>
+      </div>
     </div>
     <script src="./script.js"></script>
   </body>
